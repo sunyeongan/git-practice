@@ -58,9 +58,14 @@ $ git push -f origin amend_branch
 ## Useful git commands  
 1. Git pull all from remote  
 ```
+<<<<<<< HEAD
 $ git status
 $ git remote -v
 $ git log -5 --oneline
+=======
+$git status
+$git remote -v
+>>>>>>> 414457d38f60a1bd7557f88c9689a417198dbe54
 $ git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
 $ git fetch --all
 $ git pull --all
